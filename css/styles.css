@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   height: 4250px;
   width: 100%;
@@ -155,15 +160,31 @@ main {
 }
 
 .tourist-say {
-  height: 100vh;
+  height: 740px;
   width: 100%;
-  background: url("/img/tourist-say.png");
+  background: url("/img/tourist-say-back.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.tourist-say .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tourist-say .container .tourist-say__main-photo {
+  height: 285px;
+  width: 100%;
+  background: url("/img/tourist-say-photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-size: cover;*/
+  z-index: 999;
 }
 
 .footer {
