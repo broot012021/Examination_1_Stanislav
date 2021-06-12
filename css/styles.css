@@ -173,18 +173,14 @@ main {
 
 .tourist-say .container {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
 }
 
-.tourist-say .container .tourist-say__main-photo {
+.tourist-say .container .tourist-say__item {
+  display: flex;
+  flex-direction: row;
   height: 285px;
   width: 100%;
-  background: url("/img/tourist-say-photo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  /*background-size: cover;*/
-  z-index: 999;
 }
 
 .footer {

@@ -166,16 +166,12 @@ main {
     text-align: center;
     .container {
         display: flex;
-        justify-content: center;
-        text-align: center;
-        .tourist-say__main-photo {
+        flex-direction: column;
+        .tourist-say__item {
+            display: flex;
+            flex-direction: row;
             height: 285px;
             width: 100%;
-            background: url('/img/tourist-say-photo.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            /*background-size: cover;*/
-            z-index: 999;
         }
     }
 }
