@@ -176,11 +176,23 @@ main {
   flex-direction: column;
 }
 
+.tourist-say .container h3 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
 .tourist-say .container .tourist-say__item {
   display: flex;
   flex-direction: row;
   height: 285px;
   width: 100%;
+}
+
+.tourist-say .container .tourist-say__item .tourist-say__text {
+  background: url("/img/tourist-say-text.png");
+  padding: 30px;
+  color: #ffffff;
 }
 
 .footer {
