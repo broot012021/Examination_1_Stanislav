@@ -101,9 +101,10 @@ nav .container .navbar__logo {
   display: block;
   font-size: 2em;
   padding: 10px 20px;
-  margin-top: 15px;
+  margin-top: 18px;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 nav .container .menu-btn {
@@ -175,7 +176,6 @@ nav .container ul {
 
 nav .container ul li {
   height: 100%;
-  background-color: blueviolet;
 }
 
 nav .container ul li a {
@@ -227,6 +227,7 @@ main {
   justify-content: center;
   text-align: center;
   z-index: -99;
+  position: relative;
 }
 
 .how-it-works {
