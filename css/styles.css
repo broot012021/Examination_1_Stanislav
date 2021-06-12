@@ -13,7 +13,7 @@
 .app {
   height: 4250px;
   width: 100%;
-  background-color: #ffe600;
+  background-color: #ffffff;
   font-family: 'Aleo', serif;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -91,11 +91,16 @@ main {
   background: #333333;
 }
 
-section {
-  background-color: cadetblue;
-  height: 550px;
-  width: 80%;
-  margin: 0 auto;
+.tourist-say {
+  height: 100vh;
+  width: 100%;
+  background: url("/img/tourist-say.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 footer {
