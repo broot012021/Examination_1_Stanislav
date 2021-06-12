@@ -239,13 +239,44 @@ main .container .choose-us__explanation {
   width: 50%;
 }
 
+main .container .choose-us__explanation .choose-us__explanation-item {
+  margin-top: 400px;
+  height: 100%;
+}
+
+main .container .choose-us__explanation .choose-us__explanation-item h2 {
+  margin-top: 50px;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+main .container .choose-us__explanation .choose-us__explanation-item p {
+  margin-bottom: 25px;
+}
+
 main .container .choose-us__explanation .choose-us__explanation-item button {
   width: 225px;
   height: 60px;
   background-image: linear-gradient(45deg, #496bfe 45%, #5474fd 45%);
   color: #ffffff;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
+}
+
+main .container .choose-us__photos {
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .container .choose-us__photos .choose-us__photo-1 {
+  right: 20px;
+  padding: 5px;
+}
+
+main .container .choose-us__photos .choose-us__photo- {
+  left: 20px;
+  padding: 5px;
 }
 
 .how-it-works {

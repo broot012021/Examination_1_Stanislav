@@ -240,14 +240,39 @@ main {
             color: $white;
             width: 50%;
             .choose-us__explanation-item {
+                margin-top: 400px;
+                height: 100%;
+                h2 {
+                    margin-top: 50px;
+                    padding: 0;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                }
                 button {
                     width: 225px;
                     height: 60px;
                     background-image: linear-gradient( 45deg, #496bfe 45%, #5474fd 45%);
                     color: $white;
-                    font-size: 25px;
+                    font-size: 22px;
                     text-transform: uppercase;
                 }
+            }
+
+        }
+        .choose-us__photos {
+            margin-top: 220px;
+            display: flex;
+            flex-direction: column;
+            .choose-us__photo-1 {
+                right: 20px;
+                padding: 5px;
+            }
+            .choose-us__photo- {
+                left: 20px;
+                padding: 5px;
             }
         }
     }
