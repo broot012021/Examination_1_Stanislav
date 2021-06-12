@@ -52,7 +52,7 @@ header {
         outline: none;
         max-width: 800px;
         height: 60px;
-        border-color: $white;
+        border: none;
         border-width: 4px;
         padding: 0 30px;
         margin: 20px 0;
@@ -62,8 +62,8 @@ header {
         text-decoration: none;
         text-transform: uppercase;
         height: 60px;
-        padding: 10px 33px;
-        border-color: $white;
+        padding: 10px 43px;
+        border: none;
         border-width: 4px;
         transition: .5s;
         color: $white;
@@ -77,16 +77,34 @@ nav {
     background-color: $primaryBtnColor;
     height: 80px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        height: 80px;
+        width: 81%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 600;
+        width: 25%;
+        height: 100%;
+        text-transform: uppercase;
+        margin-top: 60px;
+    }
     ul {
         text-align: right;
         flex: 1;
+        width: 75%;
+        height: 100%;
+        float: right;
         li {
             display: inline-block;
             list-style: none;
-            margin: 20px 20px;
+            margin: 33px 33px;
             a {
                 color: $white;
                 text-decoration: none;
@@ -113,6 +131,24 @@ main {
     background: $grey;
 }
 
+.book-now-1 {
+    height: 80vh;
+    width: 100%;
+    background: url('/img/book-now-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.book-now-2 {
+    height: 80vh;
+    width: 100%;
+    background: url('/img/book-now-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .tourist-say {
     height: 100vh;
     width: 100%;
@@ -125,9 +161,7 @@ main {
     text-align: center;
 }
 
-footer {
-    background-color: cornflowerblue;
+.footer {
+    background-image: linear-gradient( 45deg, red 45%, blue 45%);
     height: 200px;
-    width: 80%;
-    margin: 0 auto;
 }
