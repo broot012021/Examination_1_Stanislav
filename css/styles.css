@@ -1,17 +1,7 @@
-/**
-* Base styles
-**/
-/* Fonts */
-/*@include font-face(Roboto, '../fonts/roboto/Roboto-Regular', 'Roboto-Regular');
-@include font-face(Roboto, '../fonts/roboto/Roboto-Light', 'Roboto-Light', 300);
-@include font-face(Roboto, '../fonts/roboto/Roboto-Thin', 'Roboto-Thin', 100);
-@include font-face(Roboto, '../fonts/roboto/Roboto-Medium', 'Roboto-Medium', 500);
-@include font-face(Roboto, '../fonts/roboto/Roboto-Bold', 'Roboto-Bold', 700);*/
-body {
-  background-color: #edf2f6;
-}
-
-/*@import 'utilities/sprites';
+/*@import 'utilities/colors';
+@import 'base';
+@import 'utilities/helper';
+@import 'utilities/sprites';
 @import 'utilities/overrides';
 @import 'layout/layout';
 @import 'module/module';*/
@@ -22,14 +12,21 @@ body {
 }
 
 .app {
-  height: 900px;
+  height: 4250px;
   width: 100%;
-  background-color: #245c49;
+  background-color: #ffe600;
 }
 
 header {
   background-color: blue;
   height: 150px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #5474fd;
+  height: 80px;
   width: 80%;
   margin: 0 auto;
 }
