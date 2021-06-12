@@ -1,0 +1,55 @@
+//Overrides for other packages
+
+//Bootstrap overrides
+.card {
+  margin-bottom: 1.625rem;
+}
+
+.card-header {
+  color: $stylish-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.card-text {
+  font-size: .8125rem;
+}
+
+.card img.rounded {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.card img.rounded-circle {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.modal-title {
+  color: lighten($stylish-color-dark, 10%);
+  font-weight: 600;
+}
+
+.modal-header {
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}
+
+.modal-open .modal {
+  overflow: hidden;
+}
+
+.navbar .navbar-toggler {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin: 5rem auto;
+  }
+}

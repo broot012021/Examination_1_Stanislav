@@ -1,0 +1,135 @@
+//Styles for forms settings pages
+
+.settings-banner {
+  color: lighten($header-color, 2%);
+  text-transform: uppercase;
+
+  .fa {
+    margin-right: .5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+.settings-menu {
+  .card-block {
+    padding: 0;
+  }
+
+  .item {
+    > .menu-link {
+      border-bottom: 1px solid $border-color;
+      color: $stylish-color-dark;
+      display: block;
+      font-size: .813rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .list-unstyled {
+      margin: .6rem 0 .6rem 2rem;
+
+      .menu-link {
+        color: lighten($stylish-color, 20%);
+        display: block;
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+        padding: .6rem 0;
+
+        &.active {
+          color: $stylish-color-dark;
+        }
+      }
+    }
+  }
+
+  .border-top > a {
+    border-top: 1px solid $border-color;
+  }
+}
+
+.settings-form {
+  .group-input-title {
+    color: $stylish-color;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .input-comment {
+    color: $logo-blue;
+    font-size: .75rem;
+    font-style: italic;
+    margin-top: -.625rem;
+  }
+  .form-submit {
+    display: block;
+  }
+
+  .mdb-select {
+    .select-dropdown {
+      color: $stylish-color-dark;
+    }
+
+    .caret {
+      color: $stylish-color-dark;
+    }
+
+    .dropdown-content li {
+
+      font-weight: 400;
+      line-height: .625rem;
+      padding: 0 .5rem;
+      text-transform: capitalize;
+      span {
+        color: $stylish-color;
+        font-size: .95rem;
+        padding: .95rem;
+        &:hover {
+          color: $amber;
+        }
+      }
+      &.disabled span {
+        color: lighten($stylish-color, 30%);
+        &:hover {
+          color: lighten($stylish-color, 30%);
+        }
+      }
+    }
+  }
+  .switch label input[type=checkbox]:checked + .lever:after {
+    background-color: $amber;
+  }
+}
+
+.settings-modal {
+  z-index: 9999;
+  .modal-dialog {
+    height: 80vh;
+    margin: 4.3rem auto;
+    @media only screen and (min-width: $medium) {
+      max-width: 46.5rem;
+    }
+  }
+  .modal-body {
+    height: 60vh;
+    overflow-y: scroll;
+  }
+}
+
+.user-social-form, .institution-social-form {
+  .input-group .input-group-addon {
+    width: 2.8rem
+  }
+}
+
+.user-addtional-mails-list {
+  .btn-sm {
+    padding: .45rem .8rem .2rem;
+  }
+}

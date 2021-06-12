@@ -1,0 +1,75 @@
+//Styles for header menu
+.header-menu .navbar-nav {
+  flex-direction: row;
+
+  @media only screen and (max-width: $extra-small) {
+    justify-content: space-between;
+  }
+
+  > .nav-item {
+    //border: 1px solid red;
+    padding: 0 .5rem;
+
+    > .nav-link {
+      color: $white-grey-menu !important;
+      margin-bottom: .4375rem;
+      margin-top: .6875rem;
+
+      &:hover {
+        color: lighten($white-grey-menu, 10%) !important;
+      }
+    }
+  }
+
+  .fa {
+    font-size: 20px;
+    padding: 6px 3px;
+  }
+}
+
+.header-menu {
+  .dropdown-menu {
+    min-width: 12.375rem;
+    padding: 0 0 .8rem;
+
+    .dropdown-item {
+      color: $stylish-color !important;
+      cursor: pointer;
+      font-family: Roboto, sans-serif;
+      font-size: .75rem;
+      font-weight: 600;
+      line-height: .875rem;
+      padding: .4rem 1rem;
+      text-transform: capitalize;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        box-shadow: none !important;
+        color: lighten($stylish-color-dark, 25%) !important;
+
+        .fa {
+          color: lighten($stylish-color-dark, 25%) !important;
+        }
+      }
+    }
+
+    .fa {
+      color: $stylish-color-dark;
+      margin-right: .8rem;
+    }
+
+    .dropdown-divider {
+      margin: 0;
+    }
+  }
+
+  .menu-title {
+    color: lighten($stylish-color-dark, 25%);
+    font-size: .663rem;
+    font-weight: 700;
+    line-height: .875rem;
+    padding: .8rem 1.313rem;
+    text-transform: uppercase;
+  }
+}

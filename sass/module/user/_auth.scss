@@ -1,0 +1,95 @@
+//Styles for login and register forms
+
+.signup-form,
+.login-form,
+.reset-password-form {
+
+  .md-form {
+    margin-bottom: 1rem;
+  }
+
+  .md-form.input-group .form-control {
+    padding-left: 0;
+  }
+
+  .prefix.active {
+    color: $header-color;
+  }
+
+  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  }
+
+  input:-webkit-autofill:focus, textarea:-webkit-autofill:focus, select:-webkit-autofill:focus {
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  }
+}
+
+#modal-terms .modal-body {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+//Password validation when creating
+
+
+.create-password-form .md-form {
+  position: relative;
+  .input-group-addon {
+    display: none;
+  }
+}
+
+#password-validation {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  top:60px;
+  &:before {
+    content: "\25B2";
+    position: absolute;
+    top: -12px;
+    left: 47%;
+    font-size: 14px;
+    line-height: 14px;
+    color: #e0e0e0;
+    text-shadow: none;
+    display: block;
+  }
+  .card-header {
+    font-weight: 700;
+  }
+  ul {
+    margin-bottom: 0;
+  }
+  ul > li {
+    line-height: 24px;
+    &.invalid {
+      color: #ff4444;
+      &:before {
+        content: '\f00d';
+      }
+    }
+    &.valid {
+      color: #00C851;
+      &:before {
+        content: '\f00c';
+      }
+    }
+    &:before {
+      display: inline-block;
+      font: normal normal normal 0.9rem FontAwesome;
+      margin-right: 5px;
+    }
+  }
+}

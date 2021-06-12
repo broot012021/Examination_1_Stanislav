@@ -1,0 +1,23 @@
+/** Styles for groups card **/
+
+.groups {
+ .list > li {
+   flex-basis: 31%;
+   margin:  0.125rem;
+ }
+  .list > li:nth-child(9) {
+    border-radius: 0.25rem;
+    background-color: $amber;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: $white;
+      text-align: center;
+      flex-basis: 100%;
+      padding:  0.75rem 0;
+      border-radius: 0.25rem;
+      font-size:  0.75rem;
+    }
+  }
+}

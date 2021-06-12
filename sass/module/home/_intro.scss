@@ -1,0 +1,51 @@
+//Styles for intro section at homepage
+.intro {
+  //background-image: url("../img/slide2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+  .masking {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+
+    > .container-fluid {
+      margin-top: 4.7rem;
+      min-height: 100vh;
+      width: 100%;
+
+      > .row {
+        min-height: 100vh;
+      }
+    }
+  }
+
+  .description {
+    animation-duration: 1s;
+    color: $white;
+    padding: 1.25rem 1.25rem 4.688rem;
+    text-align: justify;
+  }
+
+  .front-registration-login {
+    margin-bottom: 0;
+    min-height: 28.25rem;
+  }
+
+  .md-pills.pills-ins .nav-link.active {
+    background-color: $logo-blue;
+  }
+
+  .tab-content {
+    padding: 0 1rem;
+  }
+
+  .card-block:nth-of-type(1) {
+    padding-bottom: 0;
+  }
+}
+
+

@@ -1,0 +1,23 @@
+//Styles for blocks with members list
+
+.party-members-block {
+  .list > li {
+    flex-basis: 20%;
+    margin: 0.3125rem;
+  }
+  .list > li:nth-child(12) {
+    border-radius: 50%;
+    background-color: $amber;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      border-radius: 50%;
+      color: $white;
+      flex-basis: 100%;
+      font-size: .75rem;
+      padding: .75rem 0;
+      text-align: center;
+    }
+  }
+}

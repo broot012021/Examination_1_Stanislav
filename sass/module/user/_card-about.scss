@@ -1,0 +1,25 @@
+// Styles for about card
+
+.card.about {
+  section:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .read-more {
+    color: $amber;
+  }
+
+  .info-list {
+    font-size: .875rem;
+
+    i {
+      margin-right: .3125rem;
+    }
+  }
+
+  .social-accounts {
+    .btn {
+      margin: calculate-rem(10px) calculate-rem(4px) calculate-rem(10px) 0;
+    }
+  }
+}

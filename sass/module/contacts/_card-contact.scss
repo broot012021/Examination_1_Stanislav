@@ -1,0 +1,129 @@
+//Styles for contacts card
+.contacts-header {
+  margin-bottom: 0;
+
+  .title {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding-top: .625rem;
+  }
+
+  .contacts-search-input {
+    display: block;
+    width: 18.75rem !important;
+  }
+}
+
+.contact {
+  flex: 0 0 22%;
+  margin: 2%;
+
+  @media only screen and (min-width: $medium) {
+    &:nth-child(4n+1) {
+      margin-left: 0;
+      margin-right: 2%;
+    }
+
+    &:nth-child(4n+4) {
+      margin-left: 2%;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (min-width: $small) and (max-width: $medium - 1) {
+    flex: 0 0 30.6%;
+
+    &:nth-child(3n+1) {
+      margin-left: 0;
+      margin-right: 2%;
+    }
+
+    &:nth-child(3n+3) {
+      margin-left: 2%;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (min-width: $extra-small) and (max-width: $small - 1) {
+    flex: 0 0 48%;
+
+    &:nth-child(odd) {
+      margin-left: 0;
+      margin-right: 2%;
+    }
+
+    &:nth-child(even) {
+      margin-left: 2%;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: $extra-small - 1) {
+    flex: 0 0 100%;
+    margin: 2% 0;
+  }
+
+  .card-up {
+    //background: url('../img/default-background.png') center center no-repeat;
+    background-size: cover;
+    height: 7.5rem;
+    overflow: visible;
+
+    @media only screen and (max-width: $small) {
+      height: 10rem;
+    }
+  }
+
+  .avatar {
+    border: .25rem solid $white;
+    height: 6.125rem;
+    margin: -46px auto 0;
+    width: 6.125rem;
+  }
+
+  .name {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    margin-bottom: .25rem;
+  }
+
+  .position {
+    font-size: .688rem;
+  }
+
+  .contact-menu {
+    margin: 2rem 0 0;
+
+    .btn-floating {
+      margin: 0;
+    }
+  }
+
+  .contact-menu-dropdown {
+    position: absolute;
+    right: 0;
+    top: -3rem;
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+
+    .dropdown-item {
+      color: $stylish-color;
+      font-size: .75rem;
+      font-weight: 700;
+      line-height: 1.625rem;
+      padding: 0 .625rem;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: transparent !important;
+        box-shadow: none;
+        color: $amber !important;
+      }
+    }
+  }
+}

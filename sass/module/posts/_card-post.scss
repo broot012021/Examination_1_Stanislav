@@ -1,0 +1,161 @@
+//Styles for post card
+.post {
+
+  &:hover {
+    .post-menu {
+      display: block;
+    }
+  }
+
+  .post-menu {
+    display: none;
+    position: absolute;
+    right: -1.038rem;
+    top: .8125rem;
+
+    .btn-floating {
+      background-color: $white-grey;
+      margin: .2rem;
+
+      .fa {
+        color: $header-color;
+        margin-top: 0;
+      }
+      &:hover {
+        background-color: darken($white-grey, 2%) !important;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .18), 0 5px 11px 0 rgba(0, 0, 0, .15);
+      }
+    }
+  }
+
+  .card-header {
+    background-color: $white;
+    padding: 1rem 1.25rem;
+
+    .avatar {
+      height: 2.5rem;
+      margin-right: .75rem;
+      width: 2.5rem;
+    }
+
+    .name {
+      color: $stylish-color;
+      font-size: .875rem;
+      line-height: 1.25rem;
+      margin-bottom: -.3125rem;
+    }
+
+    .time {
+      color: $blue-gray-l2;
+      font-size: .75rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+    }
+
+    .dropdown {
+      margin-right: 1rem;
+    }
+
+    .post-edit-menu {
+      padding: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .dropdown-item {
+      color: $stylish-color;
+      font-size: .75rem;
+      font-weight: 700;
+      line-height: 1.625rem;
+      padding: 0 .625rem;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: transparent !important;
+        box-shadow: none;
+        color: $amber !important;
+      }
+    }
+  }
+
+  .card-block {
+    padding: 1.25rem;
+  }
+
+  .card-text {
+    font-size: .875rem;
+    line-height: 1.5rem;
+  }
+
+  .card-footer {
+    padding:  1.25rem 0 0 0;
+
+    .fa {
+      color: $header-color;
+      font-size: 1rem;
+      margin-right: 0.1rem;
+    }
+
+    .liked-count, .comments-count, .shared-count {
+      color: $header-color;
+      cursor: pointer;
+      font-size: .75rem;
+      line-height: 1.5rem;
+    }
+
+    .liked-count, .comments-count {
+      margin-right: 1.125rem;
+    }
+    .liked-avatars {
+      display: inline-block;
+      margin: 0 .5rem 0 0;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: .125rem solid $white;
+      }
+
+      .list-inline-item:not(:first-child) {
+        margin-left: -1.5rem;
+      }
+
+      a {
+        color: $blue-gray-l2;
+      }
+    }
+
+    .liked-names {
+      color: $blue-gray-l2;
+      font-size: .75rem;
+      line-height: .875rem;
+
+      span {
+        color: $stylish-color;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .post-stats {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0 1.25rem;
+    padding-bottom: 1rem;
+  }
+  .view-more-comments {
+    border-bottom: 1px solid $border-color;
+    color: $stylish-color-dark;
+    cursor: pointer;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: .8125rem 0;
+    text-align: center;
+
+    .plus {
+      color: $amber;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+// Styles for circles profile card
+
+.party-card {
+  margin-bottom: 1.625rem;
+
+  .card-up {
+    //background: url('../img/default-background.png') center center no-repeat;
+    background-size: cover;
+    height: 16.56rem;
+    overflow: visible;
+    position: relative;
+
+    &:before {
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.15) 100%);
+      bottom: 0;
+      content: ' ';
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .card-block {
+    min-height: 4.125rem;
+    padding: .3125rem 1rem 1rem;
+    text-align: left;
+
+    @media only screen and (max-width: $medium) {
+      text-align: center;
+    }
+  }
+
+  .avatar {
+    height: 8.25rem;
+    margin: -6.25rem 6.25rem 0;
+    position: relative;
+    width: 8.25rem;
+
+    @media only screen and (max-width: $medium) {
+      margin: -6.25rem auto 0;
+    }
+  }
+
+  .name {
+    color: $white;
+    display: inline-block;
+    font-weight: 600;
+    left: calculate-rem(182px);
+    margin-bottom: .15rem;
+    margin-left: calculate-rem(76px);
+    position: absolute;
+    top: calculate-rem(-98px);
+    z-index: 99;
+
+    @media only screen and (max-width: $medium) {
+      color: $stylish-color-dark;
+      display: initial;
+      left: 0;
+      margin-left: 0;
+      position: relative;
+      text-align: center;
+      top: 0;
+    }
+
+    @media only screen and (max-width: $small) {
+      max-width: 18.75rem;
+    }
+  }
+
+  .location, .breadcrumb-wrapper {
+    color: $white;
+    display: inline-block;
+    font-size: .75rem;
+    left: 176px;
+    margin-left: 5.13rem;
+    position: absolute;
+    top: -69px;
+    z-index: 99;
+
+    @media only screen and (max-width: $medium) {
+      color: $stylish-color-dark;
+      display: block;
+      left: 0;
+      margin-left: 0;
+      position: relative;
+      text-align: center;
+      top: 0;
+    }
+
+    .breadcrumb {
+      background: transparent;
+      display: inline-block;
+      padding: 0;
+
+      a {
+        color: $white;
+        font-size: .75rem;
+        text-decoration: underline;
+
+        @media only screen and (max-width: $medium) {
+          color: $stylish-color-dark;
+        }
+      }
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+      color: $white;
+
+      @media only screen and (max-width: $medium) {
+        color: $stylish-color-dark;
+      }
+    }
+  }
+
+  .system-menu {
+    bottom: -1rem;
+    position: absolute;
+    right: 2.5rem;
+
+    ul {
+      margin: 0;
+    }
+
+    a {
+      margin: 0;
+    }
+
+    li:not(:last-child) {
+      margin-right: 1.375rem;
+    }
+
+    @media only screen and (max-width: $medium) {
+      bottom: .5rem;
+      right: 0;
+      top: initial;
+
+      ul > li {
+        display: block;
+        margin-bottom: .5rem;
+        margin-right: .5rem;
+      }
+
+      li:not(:last-child) {
+        margin-right: .5rem;
+      }
+    }
+
+    @media only screen and (max-width: $extra-small) {
+      bottom: initial;
+      right: .5rem;
+      top: .5rem;
+
+      ul > li {
+        display: inline-block;
+      }
+    }
+  }
+
+  .profile-menu-wraper {
+    @media only screen and (min-width: $medium) {
+      display: block;
+    }
+  }
+
+  .profile-menu {
+    margin-left: calculate-rem(206px);
+    position: relative;
+
+    @media only screen and (max-width: $medium) {
+      margin-left: 0;
+    }
+
+    .nav-item {
+      margin: 0 1.25rem;
+    }
+
+    .nav-link {
+      color: $blue-gray-l2;
+      font-weight: 700;
+      line-height: 16px;
+
+      &.active {
+        color: $stylish-color;
+      }
+
+      &:hover {
+        color: $stylish-color;
+      }
+    }
+  }
+}

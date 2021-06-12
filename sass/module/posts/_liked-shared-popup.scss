@@ -1,0 +1,30 @@
+//Styles for shared and liked modals from posts
+.liked-modal,
+.shared-modal {
+
+  .modal-body {
+    height: 18rem;
+    overflow-y: scroll;
+  }
+
+  .modal-footer {
+    height: 1rem;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+  .avatar {
+    height: 2.5rem;
+    margin-right: .75rem;
+    width: 2.5rem;
+  }
+  .name {
+    color: $stylish-color-dark;
+    font-size: .75rem;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

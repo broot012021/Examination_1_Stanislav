@@ -1,0 +1,111 @@
+//Styles for add post box
+.add-post, .edit-post {
+
+  .avatar {
+    height: 2.5rem;
+    margin-right: .75rem;
+    width: 2.5rem;
+  }
+
+  .post-text {
+    cursor: text;
+    font-size: .875rem;
+    line-height: 1.438rem;
+    outline: 0;
+    padding: .5rem;
+    width: 100%;
+
+    &:empty::before {
+      color: lighten($stylish-color, 30%);
+      content: attr(placeholder);
+      display: block;
+    }
+  }
+
+  .card-footer {
+    padding: .5rem;
+  }
+
+  .add-image,
+  .tag-contact,
+  .add-geo {
+    color: $stylish-color-dark;
+    cursor: pointer;
+    margin: 0 .5rem;
+
+    &:hover {
+      color: lighten($stylish-color-dark, 25%);
+    }
+  }
+
+  .add-geo {
+    margin-left: 0;
+  }
+
+  input.select-dropdown {
+    height: 1rem;
+    margin: 0;
+    color: $stylish-color;
+    font-size: .75rem;
+    font-weight: 700;
+    border: 0;
+  }
+
+  span.caret {
+    color: $stylish-color;
+    top: 0;
+  }
+
+  .select-privacy {
+    color: $stylish-color;
+    font-size: .75rem;
+    font-weight: 700;
+    padding: .3rem;
+
+    @media only screen and (min-width: $extra-small) {
+      margin-right: 1rem;
+    }
+  }
+
+  .dropdown-content li {
+    line-height: .5rem;
+
+    > span {
+      background-color: $white;
+      color: $stylish-color;
+      font-size: .75rem;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $white !important;
+        color: $amber !important;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .post-btn {
+    flex-grow: 1;
+    margin-top: 1rem;
+    width: 100%;
+
+    @media only screen and (min-width: $extra-small) {
+      flex-grow: 0;
+      margin-top: 0;
+      width: initial;
+    }
+  }
+}
+
+.edit-post {
+  margin-bottom: 0;
+}
+
+.edit-post-modal {
+  .modal-header {
+    padding: calculate-rem(5px) calculate-rem(15px);
+  }
+  .modal-body {
+    padding: 0;
+  }
+}

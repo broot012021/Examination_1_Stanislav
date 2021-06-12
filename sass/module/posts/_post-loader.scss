@@ -1,0 +1,78 @@
+//Styles for post loader
+.post-loader {
+
+  .card-header {
+    .avatar,
+    .name,
+    .time {
+      background-color: $blue-gray-l2;
+    }
+
+    .avatar {
+      height: 2.5rem;
+      margin-right: .75rem;
+      width: 2.5rem;
+    }
+
+    .name {
+      height: .5rem;
+      margin-bottom: .5rem;
+      width: 6rem;
+    }
+
+    .time {
+      height: .5rem;
+      width: 3rem;
+    }
+  }
+
+  .card-block {
+    .line {
+      height: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    .line-one {
+      width: 90%;
+    }
+
+    .line-two {
+      width: 100%;
+    }
+
+    .line-three {
+      width: 60%;
+    }
+
+    .line-four {
+      width: 50%;
+    }
+
+    .line-five {
+      width: 35%;
+    }
+  }
+
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -12.5rem 0;
+    }
+
+    100% {
+      background-position: 12.5rem 0;
+    }
+  }
+
+  .animated-background {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: $blue-gray-l2;
+    background: linear-gradient(to right, lighten($blue-gray-l2, 10%) 8%, darken($blue-gray-l2, 5%) 18%, lighten($blue-gray-l2, 10%) 33%);
+    background-size: 50rem 6.5rem;
+    height: 2.5rem;
+    position: relative;
+  }
+}

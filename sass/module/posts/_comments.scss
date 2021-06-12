@@ -1,0 +1,187 @@
+//Styles for adding comments to posts
+.add-comment-post {
+  padding: 1.25rem;
+
+  .add-comment-input {
+    border: 1px solid darken($border-color, 5%);
+    border-radius: 5px;
+    cursor: text;
+    font-size: .875rem;
+    line-height: 1.438rem;
+    outline: 0;
+    padding: .5rem;
+    width: 100%;
+
+    &:empty::before {
+      color: lighten($stylish-color, 30%);
+      content: attr(placeholder);
+      display: block;
+    }
+  }
+
+  .avatar {
+    height: 2.5rem;
+    margin-right: .75rem;
+    max-width: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.reply-comment-post {
+  padding: 1.25rem 1.25rem 1.25rem 4.75rem;
+
+  @media only screen and (max-width: $extra-small) {
+    padding: 1.25rem;
+  }
+
+  .reply-comment-input {
+    background-color: $white;
+    border: 1px solid darken($border-color, 5%);
+    border-radius: 5px;
+    cursor: text;
+    font-size: .875rem;
+    line-height: 1.438rem;
+    outline: 0;
+    padding: .5rem;
+    width: 100%;
+
+    @media only screen and (max-width: $extra-small) {
+      width: 85%;
+    }
+
+    &:empty::before {
+      color: lighten($stylish-color, 30%);
+      content: attr(placeholder);
+      display: block;
+    }
+  }
+}
+
+.comments {
+  background-color: lighten($border-color, 4%);
+  color: $header-color;
+  font-size: .75rem;
+  padding: 0;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  .comment {
+    padding: 1.25rem 1.25rem 0;
+  }
+
+  .avatar-wrapper {
+    /*flex-basis: 10rem;
+    @media only screen and (max-width: $extra-small) {
+      flex-basis: 20rem;
+    }*/
+  }
+
+  .avatar {
+    border: 0.125rem solid $white;
+    height: 2.5rem;
+    margin-right: .75rem;
+    max-width: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .comment-author {
+    color: inherit;
+    font-size: .775rem;
+    font-weight: 600;
+    margin-right: .4rem;
+  }
+
+  .comment-footer {
+    font-size: .75rem;
+    height: 4rem;
+
+    > * {
+      margin-right: 1rem;
+    }
+
+    .like-comment,
+    .reply-comment {
+      cursor: pointer;
+    }
+
+    .menu-comment {
+      padding: 0;
+
+      a::after {
+        display: none;
+      }
+
+      .dropdown-item {
+        color: $stylish-color;
+        font-size: .75rem;
+        font-weight: 700;
+        line-height: 1.625rem;
+        padding: 0 .625rem;
+
+        &:hover {
+          color: $amber !important;
+          background-color: transparent !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .first-level > .item > .comment {
+    border-bottom: 1px solid darken($border-color, 10%);
+  }
+
+  .second-level {
+
+    .avatar-wrapper {
+     /* flex-basis: 45%;
+      @media only screen and (max-width: $extra-small) {
+        flex-basis: 132%;
+      }*/
+    }
+
+    .comment {
+      border: 1px solid darken($border-color, 10%);
+      border-bottom: 0;
+      border-right: 0;
+      margin-left: 7.4%;
+      padding-left: 6.2%;
+      position: relative;
+
+      &::before {
+        background-color: lighten($border-color, 4%);
+        border: 1px solid darken($border-color, 10%);
+        border-radius: 50%;
+        content: " ";
+        display: block;
+        height: .625rem;
+        left: -.375rem;
+        position: absolute;
+        top: 2rem;
+        width: .625rem;
+      }
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid darken($border-color, 10%);
+      }
+    }
+  }
+
+  .item {
+    .comment + .reply-comment-post {
+      border-bottom: 1px solid darken($border-color, 10%);
+    }
+  }
+}
+
+
+
+
+
+

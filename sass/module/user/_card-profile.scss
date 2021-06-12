@@ -1,0 +1,131 @@
+// Styles for profile card
+
+.user-profile-card {
+  margin-bottom: 1.625rem;
+
+  .card-up {
+    //background: url('../img/default-background.png') center center no-repeat;
+    background-size: cover;
+    height: 16.56rem;
+    overflow: visible;
+    position: relative;
+
+    &:before {
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.15) 100%);
+      bottom: 0;
+      content: ' ';
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .card-block {
+    min-height: 4.125rem;
+    padding: .3125rem 1rem 1rem;
+  }
+
+  .avatar {
+    height: 8.25rem;
+    margin: -6.25rem auto 0;
+    position: relative;
+    width: 8.25rem;
+  }
+
+  .name {
+    color: $stylish-color;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: .15rem;
+    position: relative;
+    z-index: 99;
+  }
+
+  .position {
+    color: $blue-gray-l2;
+    display: inline-block;
+    font-size: .75rem;
+    position: relative;
+    z-index: 99;
+
+    @media only screen and (max-width: $medium) {
+      display: block;
+    }
+  }
+
+  .system-menu {
+    bottom: -1rem;
+    position: absolute;
+    right: 2.5rem;
+
+    ul {
+      margin: 0;
+    }
+
+    a {
+      margin: 0;
+    }
+
+    li:not(:last-child) {
+      margin-right: 1.375rem;
+    }
+
+    @media only screen and (max-width: $medium) {
+      bottom: .5rem;
+      right: 0;
+      top: initial;
+
+      ul > li {
+        display: block;
+        margin-bottom: .5rem;
+      }
+
+      li:not(:last-child) {
+        margin-right: .5rem;
+      }
+    }
+
+    @media only screen and (max-width: $extra-small) {
+      bottom: initial;
+      right: .5rem;
+      top: .5rem;
+
+      ul > li {
+        display: inline-block;
+      }
+    }
+  }
+
+  .profile-menu-wraper {
+    @media only screen and (min-width: $medium) {
+      display: block;
+    }
+  }
+
+  .profile-menu {
+    margin-top: -2.625rem;
+    position: relative;
+
+    @media only screen and (max-width: $medium) {
+      margin-top: 0;
+    }
+
+    .nav-item {
+      margin: 0 1.25rem;
+    }
+
+    .nav-link {
+      color: $blue-gray-l2;
+      font-weight: 700;
+      line-height: 16px;
+
+      &.active {
+        color: $stylish-color;
+      }
+
+      &:hover {
+        color: $stylish-color;
+      }
+    }
+  }
+}

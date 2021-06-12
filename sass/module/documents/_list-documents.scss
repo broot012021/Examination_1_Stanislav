@@ -1,0 +1,147 @@
+//Styles for documents that listed in users, institutions and groups
+.documents-header {
+  .title {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding-top: .625rem;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row {
+    &>div {
+      @media only screen and (max-width: $medium) {
+        margin-bottom: calculate-rem(10px);
+      }
+    }
+  }
+
+  .add-document {
+    padding: calculate-rem(10px) calculate-rem(24px);
+  }
+}
+
+.user-documents-list {
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.documents-row-header {
+  color: lighten($stylish-color-dark, 10%);
+  font-size: calculate-rem(14px);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.document-item {
+  border-bottom: 1px solid $border-color;
+  font-size: calculate-rem(14px);
+  margin-bottom: 10px;
+  padding: .8rem 0;
+
+  &>div {
+    @media only screen and (max-width: $medium) {
+      margin-bottom: .25rem;
+      margin-top: .25rem;
+    }
+  }
+
+  @media only screen and (max-width: $medium) {
+    font-size: 1rem;
+  }
+
+  .type-icon .fa {
+    font-size: 2.2rem;
+
+    &.fa-file-pdf-o {
+      color: #dd1d00;
+    }
+
+    &.fa-file-word-o {
+      color: #295497;
+    }
+
+    &.fa-file-excel-o {
+      color: #1f7244;
+    }
+
+    &.fa-file-powerpoint-o {
+      color: #d14424;
+    }
+
+    &.fa-file-image-o {
+      color: #FF8800;
+    }
+
+    &.fa-file-code-o {
+      color: #f16528;
+    }
+
+    &.fa-file-text-o {
+      color: #3E4551;
+    }
+
+    &.fa-file-o {
+      color: #16859e;
+    }
+  }
+
+  .actions-list {
+    margin: 0;
+
+    @media only screen and (max-width: $medium) {
+      margin-bottom: .25rem;
+      margin-top: .25rem;
+    }
+
+    .list-inline-item {
+      margin-right: calculate-rem(9px);
+
+      @media only screen and (max-width: $medium) {
+        margin-right: 1rem;
+      }
+    }
+
+    .action-link {
+      color: lighten($stylish-color, 10%);
+
+      &:hover {
+        color: $stylish-color;
+      }
+    }
+
+    .fa {
+      font-size: calculate-rem(18px);
+
+      @media only screen and (max-width: $medium) {
+        font-size: calculate-rem(25px);
+      }
+    }
+  }
+
+  .property-label {
+    color: lighten($stylish-color-dark, 10%);
+    font-size: calculate-rem(14px);
+    font-weight: 600;
+    margin-right: calculate-rem(10px);
+
+    @media only screen and (max-width: $medium) {
+      font-size: 1rem;
+    }
+  }
+
+  .document-location {
+    .avatar {
+      display: inline-block;
+      height: 2.5rem;
+      margin-right: calculate-rem(10px);
+      width: 2.5rem;
+    }
+  }
+}

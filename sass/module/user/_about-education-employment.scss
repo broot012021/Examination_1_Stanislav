@@ -1,0 +1,56 @@
+//Styles for education and employment cards in about section of user profile
+.education-employment {
+  font-size: .813rem;
+  line-height: 1.125rem;
+
+  .list-item {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .position {
+    color: $stylish-color-dark;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+  }
+
+  .organisation {
+    color: $stylish-color-dark;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+  }
+
+  .school {
+    @extend .organisation;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .degree-field-grade {
+    @extend .organisation;
+  }
+
+  .years {
+    color: $stylish-color;
+    font-size: .688rem;
+    font-weight: 500;
+    margin-bottom: .3125rem;
+  }
+
+  .location {
+    color: $stylish-color;
+    font-size: .888rem;
+    font-weight: 500;
+    margin-bottom: .8125rem;
+  }
+
+  .description {
+    color: $stylish-color;
+    font-weight: 400;
+  }
+
+}

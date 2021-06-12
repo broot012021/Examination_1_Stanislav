@@ -1,0 +1,21 @@
+//Styles for features section at homepage
+.features {
+  padding-top: $home-sections-padding;
+  text-align: center;
+
+  .feature-icon {
+    height: 9.375rem;
+    margin: 0 auto;
+    width: 9.375rem;
+  }
+
+  .feature-title {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .features-description {
+    text-align: justify;
+  }
+}
