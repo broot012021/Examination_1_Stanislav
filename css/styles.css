@@ -17,11 +17,21 @@
   background-color: #ffe600;
 }
 
-header {
-  background-color: black;
-  height: 150px;
+.container {
   width: 80%;
   margin: 0 auto;
+}
+
+header {
+  background: url("/img/top-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 820px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 nav {

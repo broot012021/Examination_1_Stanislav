@@ -20,11 +20,21 @@
     background-color: rgb(255, 230, 0);
 }
 
-header {
-    background-color: rgb(0, 0, 0);
-    height: 150px;
+.container {
     width: 80%;
     margin: 0 auto;
+}
+
+header {
+    background: url('/img/top-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 820px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 nav {
