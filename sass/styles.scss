@@ -229,11 +229,11 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     z-index: -99;
     position: relative;
+    .container {
+        display: flex;
+    }
 }
 
 .how-it-works {
