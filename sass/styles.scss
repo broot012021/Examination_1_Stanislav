@@ -78,9 +78,18 @@ main {
     height: 100vh;
     width: 100%;
     background: url('/img/why-us-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.how-it-works {
+    height: 130px;
+    width: 100%;
+    background: $grey;
 }
 
 section {
